@@ -35,7 +35,7 @@ namespace Phobos.Samples.ClusterPing
             var system = ActorSystem.Create("phobosdemo", config);
 
             var broadcastActor = system.ActorOf(Props.Create(() => new RandomBroadcastActor()), "random");
-            var pinger = system.ActorOf(Props.Create(() => new PingGenerator(broadcastActor)));
+            var pinger = system.ActorOf(Props.Create(() => new PingGenerator(broadcastActor)), "pinger");
         }
     }
 }
