@@ -129,6 +129,7 @@ namespace Phobos.Samples.ClusterPing
             {
                 await AddMember(m.Member);
             }, m => !m.Member.Address.Equals(_cluster.SelfAddress));
+            
             Receive<ClusterEvent.IMemberEvent>(_ => { }); // ignore
             Receive<Terminated>(t => { _neighbors.Remove(t.ActorRef); });
         }
