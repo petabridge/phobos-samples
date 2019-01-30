@@ -123,13 +123,13 @@ namespace Phobos.Samples.ClusterPing
             ReceiveAsync<ClusterEvent.MemberWeaklyUp>(async m =>
             {
                 await AddMember(m.Member);
-                BecomeTransmitting();
             }, m => !m.Member.Address.Equals(_cluster.SelfAddress));
+
             ReceiveAsync<ClusterEvent.MemberUp>(async m =>
             {
                 await AddMember(m.Member);
-                BecomeTransmitting();
             }, m => !m.Member.Address.Equals(_cluster.SelfAddress));
+            
             Receive<ClusterEvent.IMemberEvent>(_ => { }); // ignore
             Receive<Terminated>(t => { _neighbors.Remove(t.ActorRef); });
         }
