@@ -14,7 +14,7 @@
 
   <ItemGroup>
     <PackageReference Include="Phobos.Monitoring.StatsD" Version="0.7.0" />
-    <PackageReference Include="Phobos.Tracing.Zipkin" Version="0.5.0" />
-    <PackageReference Include="Phobos.Actor" Version="0.5.1" />
+    <PackageReference Include="Phobos.Tracing.Zipkin" Version="0.5.1" />
+    <PackageReference Include="Phobos.Actor" Version="0.6.0" />
   </ItemGroup>
 </Project>
