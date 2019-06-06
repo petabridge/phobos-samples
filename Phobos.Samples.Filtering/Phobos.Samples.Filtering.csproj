@@ -14,7 +14,7 @@
 
   <ItemGroup>
     <PackageReference Include="Phobos.Actor" Version="$(PhobosActor)" />
-    <PackageReference Include="Phobos.Tracing.ApplicationInsights" Version="$(JeagerVersion)" />
+    <PackageReference Include="Phobos.Tracing.ApplicationInsights" Version="$(AppInsight)" />
   </ItemGroup>
 
 </Project>
