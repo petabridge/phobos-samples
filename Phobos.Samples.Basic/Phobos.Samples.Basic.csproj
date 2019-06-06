@@ -1,5 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Import Project="..\common.props" />
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.0</TargetFramework>
@@ -13,8 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Phobos.Monitoring.StatsD" Version="0.7.0" />
-    <PackageReference Include="Phobos.Tracing.Zipkin" Version="0.5.1" />
-    <PackageReference Include="Phobos.Actor" Version="0.6.0" />
+    <PackageReference Include="Phobos.Monitoring.StatsD" Version="$(StatsD)" />
+    <PackageReference Include="Phobos.Tracing.Zipkin" Version="$(ZipkinVersion)" />
+    <PackageReference Include="Phobos.Actor" Version="$(AkkaCluster)" />
   </ItemGroup>
 </Project>

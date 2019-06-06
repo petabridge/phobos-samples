@@ -2,7 +2,7 @@
   <Import Project="..\common.props" />
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
@@ -13,9 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Phobos.Monitoring.StatsD" Version="$(StatsD)" />
-    <PackageReference Include="Phobos.Tracing.Zipkin" Version="$(ZipkinVersion)" />
-    <PackageReference Include="Phobos.Actor.Cluster" Version="$(AkkaCluster)" />
+    <PackageReference Include="Phobos.Actor" Version="$(PhobosActor)" />
+    <PackageReference Include="Phobos.Tracing.ApplicationInsights" Version="$(JeagerVersion)" />
   </ItemGroup>
 
 </Project>

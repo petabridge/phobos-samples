@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <StatsD>0.7.0</StatsD>
+    <ZipkinVersion>0.5.1</ZipkinVersion>
+    <JeagerVersion>0.5.1</JeagerVersion>
+    <AkkaCluster>0.6.0</AkkaCluster>
+    <PhobosActor>0.6.0</PhobosActor>
+  </PropertyGroup>
+</Project>
